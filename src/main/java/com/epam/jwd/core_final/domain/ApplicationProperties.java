@@ -6,7 +6,7 @@ package com.epam.jwd.core_final.domain;
  * Expected fields:
  * <p>
  * inputRootDir {@link String} - base dir for all input files
- * outputRootDir {@link String} - base dir for all output files
+ * outputRootDir {@link String} - base dir  for all output files
  * crewFileName {@link String}
  * missionsFileName {@link String}
  * spaceshipsFileName {@link String}
@@ -16,4 +16,5 @@ package com.epam.jwd.core_final.domain;
  */
 public class ApplicationProperties {
     //todo
+
 }

@@ -14,5 +14,8 @@ package com.epam.jwd.core_final.domain;
  * to {@link Planet}
  */
 public class FlightMission extends AbstractBaseEntity {
+    public FlightMission() {
+        super(id, name);
+    }
     // todo
 }
