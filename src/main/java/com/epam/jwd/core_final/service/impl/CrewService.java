@@ -47,6 +47,6 @@ public class CrewService implements com.epam.jwd.core_final.service.CrewService 
 
     @Override
     public CrewMember createCrewMember(CrewMember spaceship) throws RuntimeException {
-        return null;
+        return new CrewMember(spaceship.getId(),spaceship.getRole(),spaceship.getName(),spaceship.getRank());
     }
 }

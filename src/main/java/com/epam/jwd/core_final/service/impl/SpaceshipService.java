@@ -36,6 +36,6 @@ public class SpaceshipService implements com.epam.jwd.core_final.service.Spacesh
 
     @Override
     public Spaceship createSpaceship(Spaceship spaceship) throws RuntimeException {
-        return null;
+        return new Spaceship(spaceship.getId(),spaceship.getName(),spaceship.getFlightDistance(),spaceship.getCrew());
     }
 }

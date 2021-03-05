@@ -7,7 +7,14 @@ public class SpacemapService implements com.epam.jwd.core_final.service.Spacemap
     private SpacemapService(){};
     @Override
     public Planet getRandomPlanet() {
-        return null;
+        String name = "";
+        for (int i = 0; i < 7; i++) {
+            int v = 1 + (int) (Math.random() * 26);
+            char c = (char) (v + (i == 0 ? 'A' : 'a') - 1);
+            name += c;
+        }
+        return new Planet((long)Math.random()*100,name,Integer.parseInt(String.valueOf(Math.random()*100)),
+                Integer.parseInt(String.valueOf(Math.random()*100)));
     }
 
     @Override

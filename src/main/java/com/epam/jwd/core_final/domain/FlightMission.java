@@ -85,4 +85,40 @@ public class FlightMission extends AbstractBaseEntity {
     public void setTo(Planet to) {
         this.to = to;
     }
+
+    public String getMissionName() {
+        return missionName;
+    }
+
+    public LocalDate getStartDate() {
+        return startDate;
+    }
+
+    public LocalDate getEndDate() {
+        return endDate;
+    }
+
+    public Long getDistance() {
+        return distance;
+    }
+
+    public Spaceship getAssignedSpaceShift() {
+        return assignedSpaceShift;
+    }
+
+    public List<CrewMember> getAssignedCrew() {
+        return assignedCrew;
+    }
+
+    public MissionResult getMissionResult() {
+        return missionResult;
+    }
+
+    public Planet getFrom() {
+        return from;
+    }
+
+    public Planet getTo() {
+        return to;
+    }
 }

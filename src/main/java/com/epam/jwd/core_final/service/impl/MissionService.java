@@ -31,6 +31,8 @@ public class MissionService implements com.epam.jwd.core_final.service.MissionSe
 
     @Override
     public FlightMission createMission(FlightMission flightMission) {
-        return null;
+        return new FlightMission(flightMission.getId(), flightMission.getName(), flightMission.getMissionName(),flightMission.getStartDate(),
+                flightMission.getEndDate(),flightMission.getDistance(),flightMission.getAssignedSpaceShift(),flightMission.getAssignedCrew(),
+                flightMission.getMissionResult(),flightMission.getFrom(),flightMission.getTo());
     }
 }
