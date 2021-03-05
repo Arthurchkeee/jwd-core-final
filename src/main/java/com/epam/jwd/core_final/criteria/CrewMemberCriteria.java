@@ -4,10 +4,16 @@ import com.epam.jwd.core_final.domain.CrewMember;
 import com.epam.jwd.core_final.domain.Rank;
 import com.epam.jwd.core_final.domain.Role;
 
+import java.util.List;
+
 /**
  * Should be a builder for {@link com.epam.jwd.core_final.domain.CrewMember} fields
  */
 public class CrewMemberCriteria extends Criteria<CrewMember> {
+    public List<CrewMember> meetCriteria(List<CrewMember> crewMemberList) {
+        return crewMemberList;
+    }
+
     private CrewMember crewMember;
 
     @Override

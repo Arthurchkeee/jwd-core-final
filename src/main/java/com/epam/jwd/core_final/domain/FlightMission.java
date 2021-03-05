@@ -17,6 +17,7 @@ import java.util.List;
  * to {@link Planet}
  */
 public class FlightMission extends AbstractBaseEntity {
+    // todo
     String missionName;
     LocalDate startDate;
     LocalDate endDate;
@@ -38,59 +39,39 @@ public class FlightMission extends AbstractBaseEntity {
         this.from=from;
         this.to=to;
         this.missionResult=missionResult;
+        if(missionResult==MissionResult.FAILED){
+            for (int i = 0; i < assignedCrew.size(); i++) {
+                CrewMember crewMember=assignedCrew.get(i);
+                crewMember.setReadyForNextMissions(false);
+                assignedCrew.add(crewMember);
+            }
+        }
+
     }
-    // todo
-
-
-
-
-
 
     public void setMissionName(String missionName) {
         this.missionName = missionName;
     }
 
-
-
-
-
     public void setStartDate(LocalDate startDate) {
         this.startDate = startDate;
     }
-
-
-
-
 
     public void setEndDate(LocalDate endDate) {
         this.endDate = endDate;
     }
 
-
-
-
-
-
     public void setDistance(Long distance) {
-
         this.distance = distance;
-
     }
-
-
 
     public void setAssignedSpaceShift(Spaceship assignedSpaceShift) {
         this.assignedSpaceShift = assignedSpaceShift;
     }
 
-
-
-
-
     public void setAssignedCrew(List<CrewMember> assignedCrew) {
         this.assignedCrew = assignedCrew;
     }
-
 
     public void setMissionResult(MissionResult missionResult) {
         this.missionResult = missionResult;

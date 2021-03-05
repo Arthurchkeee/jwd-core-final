@@ -9,6 +9,9 @@ import java.util.List;
  * Should be a builder for {@link com.epam.jwd.core_final.domain.FlightMission} fields
  */
 public class FlightMissionCriteria extends Criteria<FlightMission> {
+    public List<FlightMission> meetCriteria(List<FlightMission> flightMissionList) {
+        return flightMissionList;
+    }
     FlightMission flightMission;
 
     @Override

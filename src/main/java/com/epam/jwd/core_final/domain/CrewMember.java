@@ -18,6 +18,11 @@ public class CrewMember extends AbstractBaseEntity {
     }
     // todo
 
+
+    public void setReadyForNextMissions(Boolean readyForNextMissions) {
+        this.isReadyForNextMissions = readyForNextMissions;
+    }
+
     @Override
     public Long getId() {
         return super.getId();
