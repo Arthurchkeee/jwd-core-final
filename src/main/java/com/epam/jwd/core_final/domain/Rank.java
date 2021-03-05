@@ -19,6 +19,7 @@ public enum Rank implements BaseEntity {
         return id;
     }
 
+
     /**
      * todo via java.lang.enum methods!
      */

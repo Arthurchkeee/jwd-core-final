@@ -12,6 +12,6 @@ public class CrewMemberFactory implements EntityFactory<CrewMember> {
 
     @Override
     public CrewMember create(Object... args) {
-        return new CrewMember(Long.parseLong((String) args[0]),(String) args[1],(Rank)args[2],(Role) args[3]);
+        return new CrewMember(Long.parseLong((String) args[0]),(Role) args[1],(String)args[2],(Rank) args[3]);
     }
 }

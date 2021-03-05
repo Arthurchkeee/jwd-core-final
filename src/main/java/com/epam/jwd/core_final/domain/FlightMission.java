@@ -41,4 +41,67 @@ public class FlightMission extends AbstractBaseEntity {
     }
     // todo
 
+
+
+
+
+
+    public void setMissionName(String missionName) {
+        this.missionName = missionName;
+    }
+
+
+
+
+
+    public void setStartDate(LocalDate startDate) {
+        this.startDate = startDate;
+    }
+
+
+
+
+
+    public void setEndDate(LocalDate endDate) {
+        this.endDate = endDate;
+    }
+
+
+
+
+
+
+    public void setDistance(Long distance) {
+
+        this.distance = distance;
+
+    }
+
+
+
+    public void setAssignedSpaceShift(Spaceship assignedSpaceShift) {
+        this.assignedSpaceShift = assignedSpaceShift;
+    }
+
+
+
+
+
+    public void setAssignedCrew(List<CrewMember> assignedCrew) {
+        this.assignedCrew = assignedCrew;
+    }
+
+
+    public void setMissionResult(MissionResult missionResult) {
+        this.missionResult = missionResult;
+    }
+
+
+    public void setFrom(Planet from) {
+        this.from = from;
+    }
+
+    public void setTo(Planet to) {
+        this.to = to;
+    }
 }
